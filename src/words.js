@@ -1,0 +1,4 @@
+const words = ["number", "house", "bird", "shirt", "boy", "girl", "common",
+"bed", "child", "about", "also", "among", "between", "build", "ball",
+"colour", "face", "dream", "behind"]
+export default words

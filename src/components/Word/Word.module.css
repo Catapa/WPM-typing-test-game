@@ -1,0 +1,6 @@
+.char {
+    composes: char from '../../components/Char/Char.module.css';
+}
+.focused {
+    composes: focused from '../../components/Char/Char.module.css';
+}
