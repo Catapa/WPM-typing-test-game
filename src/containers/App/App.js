@@ -3,11 +3,13 @@ import './App.module.css';
 import words from "../../words";
 import styles from './App.module.css'
 import Word from '../../components/Word/Word'
+import Timer from  '../../components/Timer/Timer'
 
 class App extends Component{
     state = {
         selectedWord: words[Math.floor(Math.random()*words.length)],
-        index: 0
+        index: 0,
+        secondsRemaining: 60
     }
 
     keyPressHandler = (event) => {
@@ -28,6 +30,7 @@ class App extends Component{
         return(
             <div className={styles.view} onKeyPress={this.keyPressHandler} tabIndex={'0'}>
                 <h1 className={styles.header}>Words-per-minute</h1>
+                <Timer seconds={this.state.secondsRemaining}/>
                 <div className={styles.wordContainer}>
                     <Word word={this.state.selectedWord} focusedIndex={this.state.index}/>
                 </div>

@@ -6,7 +6,8 @@ const word = (props) => {
         let charClasses = [styles.char]
         if(index === props.focusedIndex)
             charClasses.push(styles.focused)
-        console.log(charClasses)
+        if(index < props.focusedIndex)
+            charClasses.push(styles.correct)
         return <Char key={index} classes={charClasses.join(' ')}>{char}</Char> })
     return (
         <React.Fragment>

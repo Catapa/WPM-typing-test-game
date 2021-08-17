@@ -1,0 +1,6 @@
+.timer {
+    position: relative;
+    right: 0;
+    font-size: 3em;
+    align-self: flex-end;
+}

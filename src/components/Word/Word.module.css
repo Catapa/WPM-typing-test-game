@@ -4,3 +4,9 @@
 .focused {
     composes: focused from '../../components/Char/Char.module.css';
 }
+.correct {
+    composes: correct from '../../components/Char/Char.module.css';
+}
+.incorrect {
+    composes: incorrect from '../../components/Char/Char.module.css';
+}
