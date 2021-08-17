@@ -9,6 +9,8 @@
     text-align: center;
     position: relative;
     border-radius: 80% 20% 76% 24% / 69% 63% 37% 31% ;
+    height: 200px;
+    width: 200px;
 }
 
 .focused {
@@ -18,7 +20,7 @@
 
 .correct {
     color: white;
-    background-color: #64BAAA;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
 }
 
 .incorrect {
